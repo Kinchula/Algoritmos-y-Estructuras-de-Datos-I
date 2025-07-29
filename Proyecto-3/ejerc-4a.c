@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+
+    int x, y;
+    /*
+    Evaluo el programa con los siguientes estados iniciales:
+    1e) x->3, y->1
+    1f) x->100, y->1
+    */
+    printf("Ingrese un valor para x \n");
+    scanf("%d", &x);
+    printf("Ingrese un valor para y \n");
+    scanf("%d", &y);
+
+    if (x>=y) {
+      x = 0;
+    } else if (x<=y) {
+      x = 2;
+    }
+
+    printf("Los estados finales de las variables son x -> %d ; y -> %d\n", x, y);
+    return 0;
+  }
